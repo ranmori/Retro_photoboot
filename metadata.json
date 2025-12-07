@@ -1,0 +1,7 @@
+{
+  "name": "RetroGen Booth",
+  "description": "A nostalgic photobooth experience powered by Gemini AI. Capture vintage-style photos, apply retro filters, and generate AI-powered captions or 'vibes' for your memories.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
