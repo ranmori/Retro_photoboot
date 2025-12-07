@@ -406,7 +406,7 @@ const App: React.FC = () => {
               <div className="mt-6 border-t-2 border-gray-300 pt-4 relative z-10">
                  <div className="bg-gray-100/50 p-3 rounded font-typewriter text-gray-700 text-center min-h-[3rem] flex items-center justify-center relative backdrop-blur-sm">
                     {isGeneratingCaption ? (
-                        <span className="animate-pulse">Consulting the AI spirits...</span>
+                        <span className="animate-pulse">Consulting the spirits...</span>
                     ) : generatedCaption ? (
                         <p>"{generatedCaption}"</p>
                     ) : (
@@ -414,7 +414,7 @@ const App: React.FC = () => {
                             onClick={handleGenerateCaption}
                             className="text-sm underline text-blue-600 hover:text-blue-800"
                         >
-                            Generate Vibe Check ✨
+                            Generate Caption
                         </button>
                     )}
                  </div>
