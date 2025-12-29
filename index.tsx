@@ -1,10 +1,11 @@
-import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom/client';
-
+import React, { Suspense } from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import * as genai from "@google/genai";
 // Lazy load the main App component
-const App = React.lazy(() => import('./App'));
+const App = React.lazy(() => import("./App"));
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
 if (!rootElement) {
   throw new Error("Could not find root element to mount to");
 }
@@ -19,8 +20,8 @@ const LoadingScreen = () => (
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <Suspense fallback={<LoadingScreen />}>
-      <App />
-    </Suspense>
+    {/* <Suspense fallback={<LoadingScreen />}> */}
+    <App />
+    {/* </Suspense> */}
   </React.StrictMode>
 );
